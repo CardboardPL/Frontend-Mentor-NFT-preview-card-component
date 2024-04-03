@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./styles/general.css" type="text/css">
+  <link rel="stylesheet" href="./styles/nft-preview-card.css" type="text/css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
@@ -23,13 +24,25 @@
       <figure>
         <div class="nft-preview-img-wrapper">
           <img src="./images/image-equilibrium.jpg" alt="Equilibrium NFT">
+          <span class="overlay" aria-label="hover overlay">
+            <img src="./images/icon-view.svg" alt="View Icon">
+          </span>
         </div>
 
         <figcaption>
-          <h2 class="nft-name">Equilibrium #3429</h2>
+          <h2 class="nft-name"><a rel="noopener noreferrer" href="#">Equilibrium #3429</a></h2>
           <p class="nft-description">Our Equilibrium collection promotes balance and calm.</p>
-          <p class="nft-price">0.041 ETH</p>
-          <time class="nft-time-left">3 days left</time>
+          <div>
+            <p>
+              <img src="./images/icon-ethereum.svg" alt="Etherium Icon">
+              <span class="nft-price">0.041 ETH</span>
+            </p>
+            
+            <p>
+              <img src="./images/icon-clock.svg" alt="Clock Icon">
+              <time class="nft-time-left">3 days left</time>
+            </p>
+          </div>
         </figcaption>
       </figure>
       
@@ -37,7 +50,7 @@
 
       <address>
         <img src="./images/image-avatar.png" alt="Creator Avatar" class="creator-avatar">
-        <span class="creator-name">Creation of Jules Wyvern</span>
+        <span>Creation of <a rel="noopener noreferrer" href="#" class="creator-name">Jules Wyvern</a></span>
       </address>
     </article>
   </main>
