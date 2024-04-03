@@ -33,3 +33,9 @@ a {
   text-decoration: none;
   color: currentColor;
 }
+
+@media (max-width: 400px) {
+  html {
+    font-size: 1.0625rem;
+  }
+}
